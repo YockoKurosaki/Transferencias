@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<form id="Formulario">
+    <select id="ClienteOrigen" name="ClienteOrigen">
+        <option></option>
+    </select>
+    <select id="ClienteDestino" name="ClienteDestino">
+        <option></option>
+    </select>
+
+    <select id="OrigenCuenta" name="OrigenCuenta"></select>
+    <select id="DestinoCuenta" name="DestinoCuenta"></select>
+
+    <input type="number" id="Valor" name="Valor" placeholder="Monto" />
+
+    <input type="button" onclick="Enviar()" value="Enviar" />
+</form>
+
+@section scripts{  
+    <script src="~/Scripts/Transacciones/CrearTransaccion.js"></script>
+}
